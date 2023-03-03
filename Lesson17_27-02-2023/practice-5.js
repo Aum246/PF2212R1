@@ -3,11 +3,10 @@ let array1 = [5, 10, 15, 20, 25, 50, 20];
 
 let total = 0;
 
-for (let i = 0; i < array1.length; i++)
-  if (array1[i] == "20") {
+// for (let i = 0; i < array1.length; i++)
+for(let i in array1){
+  if (array1[i] === 20) {
     total += 1;
-    result = total;
-  } else {
-    total;
   }
-console.log(result);
+}
+console.log(total);
